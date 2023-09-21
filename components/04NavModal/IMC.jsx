@@ -9,9 +9,13 @@ const IMC = ({ modalVisivel, setModalVisivel }) => {
     const [peso, setPeso] = useState('');
     const [altura, setAltura] = useState('');
    
+
+    {/* fazendo o calculo do imc nessa pagina, pq tava dando erro ao fazer na pagina seguinte, dando sempre "acima do peso" */}
     const imc = peso / (altura * altura);
     
     const handleOKPress = () => {
+
+        {/* handle vai pegar os dados e passar via navigation no botao "ok"*/}
         
         const student = { peso, altura, imc}; 
         navigation.navigate('Screen03', { student });

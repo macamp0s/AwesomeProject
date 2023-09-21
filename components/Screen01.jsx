@@ -12,8 +12,12 @@ const Screen01 = ({navigation}) => {
     return (
         <View style={styles.container}> 
             <Text style={styles.header}>HOME</Text>
+
+              {/* tornando modais visiveis, individualmente setmodalvisible e setmodalvisivel*/}
+              
             <Button
                 title="Cadastro"
+                
                 onPress={() => setModalVisible(true)}
             />
 
@@ -24,7 +28,8 @@ const Screen01 = ({navigation}) => {
 
             <Button
                 title="Sobre"
-                onPress={() => navigation.navigate('Screen04')}
+                
+                onPress={() => navigation.navigate('Screen04')} 
             />
             {/* <Button title="Voltar" onPress={() => navigation.goBack()} />*/}
 

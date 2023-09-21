@@ -3,6 +3,8 @@ import styles from "./MyStyle"
 import MyFancyModal from "./04NavModal/MyFancyModal"
 import { useState } from "react"
 
+
+
 const getIMCStatus = (imc) => {
     if (imc < 18.5) {
       return "Abaixo do Peso";
@@ -17,7 +19,10 @@ const Screen03 = ({ navigation, route }) => {
     
     
     const [modalVisible, setModalVisible] = useState(false);
+
+    
     const imc = route.params.student.imc;
+     {/* passando o valor do imc para getimcstatus, so pra pegar a string de status do peso*/}
     const imcStatus = getIMCStatus(imc);
   
     

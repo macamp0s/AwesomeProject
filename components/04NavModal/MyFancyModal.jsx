@@ -14,6 +14,7 @@ const MyFancyModal = ({ modalVisible, setModalVisible }) => {
         
         const student = { nome, idade, curso };
       
+         {/* passando o valor de student para a screen02*/}
         navigation.navigate('Screen02', { student });
        
         setModalVisible(false);
